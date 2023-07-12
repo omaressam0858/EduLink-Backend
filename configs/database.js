@@ -1,5 +1,4 @@
 const Sequelize = require('sequelize');
-const mysqlconfig = require('./config').mysql
 const postgresconfig = require('./config').postgres
 
 const sequelize = new Sequelize(postgresconfig.host,{
