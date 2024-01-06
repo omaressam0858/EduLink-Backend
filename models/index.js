@@ -24,7 +24,7 @@ Student.hasMany(Attendees, { foreignKey: 'studentId' });
 Attendees.belongsTo(Student, { foreignKey: 'studentId' });
 Attendees.belongsTo(Group, { foreignKey: 'groupId' });
 
-database.sync({ alter: true })
+database.sync({ force : false })
 
 
 module.exports = {
