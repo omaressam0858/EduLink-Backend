@@ -2,7 +2,7 @@
 
 Category: Student
 
-Description: Retrieves A Certain User By Their ID
+Description: Retrieve a specific student by id
 
 Type: GET
 

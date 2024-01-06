@@ -2,7 +2,7 @@
 
 Category: Student
 
-Description: Creating A New Student
+Description: Create a new student with a group
 
 Type: POST
 

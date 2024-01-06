@@ -2,7 +2,7 @@
 
 Category: Groups
 
-Description: Create A Group
+Description: Create a new group
 
 Type: POST
 

@@ -2,7 +2,7 @@
 
 Category: Groups
 
-Description: Create A Schedule For Group 
+Description: Add a new schedule for a group (Saturday, Sunday , …….) 
 
 Type: POST
 

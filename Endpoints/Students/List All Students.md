@@ -2,7 +2,7 @@
 
 Category: Student
 
-Description: Get All Students Including Their Group
+Description: Get all students included their groups 
 
 Type: GET
 

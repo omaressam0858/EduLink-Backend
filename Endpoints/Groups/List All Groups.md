@@ -2,7 +2,7 @@
 
 Category: Groups
 
-Description: Get All Groups Including Their Students And Schedules
+Description: Retrieve all groups included their students and their weekly schedules
 
 Type: GET
 

@@ -24,3 +24,10 @@ Error responses contain more detail about the error in the response body, in the
 |  | invalid_request_url | This request URL is not valid. |
 |  | invalid_request | This request is not supported. |
 | 404 | not_found | Object not found |
+
+### Environment Variables
+
+| Name | Description |
+| --- | --- |
+| `PORT` | The port on which the server is running. |
+| `DATABASE_URL` | The url of the database. |
