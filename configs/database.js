@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
-const postgresconfig = require('./config').postgres
+const databaseURL = process.env.DATABASE_URL
 
-const sequelize = new Sequelize(postgresconfig.host,{
+const sequelize = new Sequelize(databaseURL,{
     logging: false
 })
 
