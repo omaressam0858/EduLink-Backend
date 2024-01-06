@@ -2,33 +2,6 @@ const Router = require('express').Router()
 const {Student, Group,Attendees} = require('../../models/index')
 const { Op } = require('sequelize')
 
-Router.get('/absent', async (req, res, next) => {
-    try {
-        const today = new Date().toISOString().split('T')[0];
-
-        const allStudents = await Student.findAll({
-            include: [
-                {
-                    model: Attendees,
-                    required: false
-                },
-            ],
-        });
-        const notAttendedStudents = await allStudents.filter((student) => {
-            const studentAttendees = student.Attendees;
-            if (studentAttendees.length === 0) return true;
-            const studentAttendeesDates = studentAttendees.map((attendee) => attendee.dayArrived);
-            if (!studentAttendeesDates.includes(today)) return true;
-        })
-
-
-        res.status(200).json(notAttendedStudents);
-    } catch (error) {
-        console.error('Error:', error);
-        next(error);
-    }
-});
-
 Router.get('/absent/:groupId', async (req, res, next) => {
     try {
         const today = new Date().toISOString().split('T')[0];
