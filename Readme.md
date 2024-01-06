@@ -1,10 +1,4 @@
-# API Reference
-
-# Generic
-
-## Introduction
-
-The reference is your key to a comprehensive understanding of the Notion API.
+# EduLink API
 
 ## Time Zone
 
