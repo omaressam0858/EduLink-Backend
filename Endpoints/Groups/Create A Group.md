@@ -1,8 +1,11 @@
 # Create a group
 
 Category: Groups
+
 Description: Create A Group
+
 Type: POST
+
 URL: /api/groups/
 
 ### Body Params

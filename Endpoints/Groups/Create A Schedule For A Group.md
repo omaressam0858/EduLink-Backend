@@ -1,8 +1,11 @@
 # Create a Schedule For Group
 
 Category: Groups
+
 Description: Create A Schedule For Group 
+
 Type: POST
+
 URL: /api/groups/schedule
 
 ### Body Params

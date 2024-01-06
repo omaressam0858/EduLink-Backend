@@ -1,8 +1,11 @@
 # Create a new student
 
 Category: Student
+
 Description: Creating A New Student
+
 Type: POST
+
 URL: api/students
 
 ### Body Params
