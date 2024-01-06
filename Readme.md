@@ -30,7 +30,3 @@ Error responses contain more detail about the error in the response body, in the
 |  | invalid_request_url | This request URL is not valid. |
 |  | invalid_request | This request is not supported. |
 | 404 | not_found | Object not found |
-
-# Endpoints
-
-[Endpoints](API%20Reference%2087d0ae864f464a0d9cdcecafea8bc7ca/Endpoints%20d0a306549d074c2b9db6f22dcf1bdf12.csv)
