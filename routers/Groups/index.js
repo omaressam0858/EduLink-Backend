@@ -14,6 +14,8 @@ Router.get('/', async (req, res, next) => {
 
 Router.post('/', async (req, res, next) => {
     try {
+        if(req.body.grade == ""|| req.body.paymentPrice == "")
+            return next({status: 400, message: "Invalid Input",code: "invalid_json"});
         const group = await Group.create({
             grade: req.body.grade,
             paymentPrice: req.body.paymentPrice
@@ -29,6 +31,8 @@ Router.post('/', async (req, res, next) => {
 
 Router.post('/schedule', async (req, res, next) => {
     try {
+        if(req.body.groupId == ""|| req.body.day == "" || req.body.time == "")
+        return next({status: 400, message: "Invalid Input",code: "invalid_json"});
         const groupSchedule = await GroupSchedule.create({
             groupId: req.body.groupId,
             day: req.body.day,

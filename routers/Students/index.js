@@ -18,6 +18,8 @@ Router.post('/', async (req, res, next) => {
     try {
         const group = await Group.findByPk(req.body.groupId)
         if(!group) return next({status: 404, message: 'Group not found', code: 'not_found'})
+        if(req.body.name == ""|| req.body.personalPhoneNumber == "" || req.body.parentPhoneNumber == "")
+            return next({status: 400, message: "Invalid Input",code: "invalid_json"});
         const student = await Student.create({
             name: req.body.name,
             personalPhoneNumber: req.body.personalPhoneNumber,
