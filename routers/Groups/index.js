@@ -29,6 +29,17 @@ Router.post('/', async (req, res, next) => {
     }
 })
 
+Router.get('/:id', async (req, res, next) => {
+    try {
+        const groups = await Group.findByPk(req.params.id,{
+            include: [GroupSchedule,Student]
+        })
+        res.status(200).json(groups)
+    } catch (error) {
+        next(error)
+    }
+})
+
 Router.post('/schedule', async (req, res, next) => {
     try {
         if(req.body.groupId == ""|| req.body.day == "" || req.body.time == "")
