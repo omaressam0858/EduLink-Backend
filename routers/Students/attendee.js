@@ -59,7 +59,7 @@ Router.post('/:id', async (req, res, next) => {
             dayArrived: toDay.toISOString().split('T')[0],
             timeArrived: toDay.toISOString().split('T')[1].split('.')[0]
         })
-        res.status(200).json(attendee)
+        res.status(200).json(student)
     }catch(error){
         next(error)
     }
